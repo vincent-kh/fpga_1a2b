@@ -1,0 +1,13 @@
+module inp_add(key,num);
+
+input key;
+output reg [3:0]num;
+
+always@(posedge key)
+begin
+	if(num<9)
+	num=num+1;
+	else
+	num=0;
+end
+endmodule

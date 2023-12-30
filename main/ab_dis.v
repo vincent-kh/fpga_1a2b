@@ -1,0 +1,14 @@
+module ab_dis(A,B,SW,AO,BO);
+
+input [3:0]A;
+input [3:0]B;
+input SW;
+output reg [3:0]AO;
+output reg [3:0]BO;
+
+always @(posedge SW)
+begin 
+AO<=A;
+BO<=B;
+end 
+endmodule 

@@ -1,0 +1,17 @@
+module seed_select(SW,seed);
+
+	input [3:0]SW;
+	output [13:0]seed;
+	reg [13:0]seed;
+	
+	always@ (SW)
+	begin
+		case (SW)
+			0: seed=14'b01011101101011;
+			1: seed=14'b10111001111010;
+			2: seed=14'b01010100001011;
+			3: seed=14'b11011111101100;
+		default:seed=14'b11110000111100;
+	endcase
+end
+endmodule 

@@ -1,0 +1,14 @@
+module oct_decode(inp,h3,h2,h1,h0);
+
+input [13:0]inp;
+output [3:0]h3;
+output [3:0]h2;
+output [3:0]h1;
+output [3:0]h0;
+
+assign h0=inp%10;
+assign h1=(inp/10)%10;
+assign h2=(inp/100)%10;
+assign h3=(inp/1000)%10;
+
+endmodule 

@@ -1,0 +1,18 @@
+module inp_add99(key,rst,num);
+
+input wire key,rst;
+output reg [6:0]num;
+
+always @(posedge key or posedge rst) begin
+  if (rst) begin
+    num <= 0;
+  end else if (key) begin
+    if (num < 99) begin
+      num <= num + 1;
+    end else begin
+      num <= 0;
+    end
+  end
+end
+
+endmodule 
