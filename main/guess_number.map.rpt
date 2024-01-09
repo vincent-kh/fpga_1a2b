@@ -1,5 +1,5 @@
 Analysis & Synthesis report for guess_number
-Sat Dec 30 16:28:33 2023
+Sat Jan 06 19:00:24 2024
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -16,16 +16,15 @@ Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
   8. Registers Removed During Synthesis
   9. General Register Statistics
  10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod0
- 13. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div0
- 14. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod1
- 15. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div1
- 16. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod2
- 17. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div2
- 18. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod3
- 19. Analysis & Synthesis Messages
- 20. Analysis & Synthesis Suppressed Messages
+ 11. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div2
+ 12. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod3
+ 13. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div1
+ 14. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod2
+ 15. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div0
+ 16. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod1
+ 17. Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod0
+ 18. Analysis & Synthesis Messages
+ 19. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -51,16 +50,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +------------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 30 16:28:33 2023        ;
+; Analysis & Synthesis Status        ; Successful - Sat Jan 06 19:00:24 2024        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; guess_number                                 ;
 ; Top-level Entity Name              ; FINAL                                        ;
 ; Family                             ; Cyclone II                                   ;
-; Total logic elements               ; 1,082                                        ;
-;     Total combinational functions  ; 1,081                                        ;
-;     Dedicated logic registers      ; 140                                          ;
-; Total registers                    ; 140                                          ;
-; Total pins                         ; 90                                           ;
+; Total logic elements               ; 1,063                                        ;
+;     Total combinational functions  ; 1,062                                        ;
+;     Dedicated logic registers      ; 113                                          ;
+; Total registers                    ; 113                                          ;
+; Total pins                         ; 103                                          ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0                                            ;
 ; Embedded Multiplier 9-bit elements ; 0                                            ;
@@ -186,19 +185,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; ab.v                             ; yes             ; User Verilog HDL File              ; D:/de2/final_exam_project/ab.v                                 ;
 ; run_blink.v                      ; yes             ; User Verilog HDL File              ; D:/de2/final_exam_project/run_blink.v                          ;
 ; run_blink2.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/de2/final_exam_project/run_blink2.bdf                       ;
+; anser_dis.v                      ; yes             ; User Verilog HDL File              ; D:/de2/final_exam_project/anser_dis.v                          ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_divide.tdf ;
-; db/lpm_divide_h6m.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_h6m.tdf                ;
-; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/sign_div_unsign_olh.tdf           ;
-; db/alt_u_div_i2f.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/alt_u_div_i2f.tdf                 ;
-; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/add_sub_lkc.tdf                   ;
-; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/add_sub_mkc.tdf                   ;
-; db/lpm_divide_eem.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_eem.tdf                ;
-; db/lpm_divide_hem.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_hem.tdf                ;
-; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/sign_div_unsign_rlh.tdf           ;
-; db/alt_u_div_o2f.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/alt_u_div_o2f.tdf                 ;
 ; db/lpm_divide_rfm.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_rfm.tdf                ;
 ; db/sign_div_unsign_5nh.tdf       ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/sign_div_unsign_5nh.tdf           ;
 ; db/alt_u_div_c5f.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/alt_u_div_c5f.tdf                 ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/add_sub_lkc.tdf                   ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/add_sub_mkc.tdf                   ;
+; db/lpm_divide_h6m.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_h6m.tdf                ;
+; db/sign_div_unsign_olh.tdf       ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/sign_div_unsign_olh.tdf           ;
+; db/alt_u_div_i2f.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/alt_u_div_i2f.tdf                 ;
+; db/lpm_divide_hem.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_hem.tdf                ;
+; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/sign_div_unsign_rlh.tdf           ;
+; db/alt_u_div_o2f.tdf             ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/alt_u_div_o2f.tdf                 ;
+; db/lpm_divide_eem.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/de2/final_exam_project/db/lpm_divide_eem.tdf                ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------+
 
 
@@ -207,27 +207,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 1,082    ;
+; Estimated Total logic elements              ; 1,063    ;
 ;                                             ;          ;
-; Total combinational functions               ; 1081     ;
+; Total combinational functions               ; 1062     ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 297      ;
-;     -- 3 input functions                    ; 246      ;
-;     -- <=2 input functions                  ; 538      ;
+;     -- 4 input functions                    ; 300      ;
+;     -- 3 input functions                    ; 244      ;
+;     -- <=2 input functions                  ; 518      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 774      ;
-;     -- arithmetic mode                      ; 307      ;
+;     -- normal mode                          ; 780      ;
+;     -- arithmetic mode                      ; 282      ;
 ;                                             ;          ;
-; Total registers                             ; 140      ;
-;     -- Dedicated logic registers            ; 140      ;
+; Total registers                             ; 113      ;
+;     -- Dedicated logic registers            ; 113      ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 90       ;
-; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 54       ;
-; Total fan-out                               ; 3355     ;
-; Average fan-out                             ; 2.56     ;
+; I/O pins                                    ; 103      ;
+; Maximum fan-out node                        ; CLOCK_27 ;
+; Maximum fan-out                             ; 55       ;
+; Total fan-out                               ; 3216     ;
+; Average fan-out                             ; 2.52     ;
 +---------------------------------------------+----------+
 
 
@@ -236,7 +236,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                    ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------+--------------+
-; |FINAL                                    ; 1081 (1)          ; 140 (0)      ; 0           ; 0            ; 0       ; 0         ; 90   ; 0            ; |FINAL                                                                                                                 ; work         ;
+; |FINAL                                    ; 1062 (2)          ; 113 (0)      ; 0           ; 0            ; 0       ; 0         ; 103  ; 0            ; |FINAL                                                                                                                 ; work         ;
 ;    |A:inst8|                              ; 17 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|A:inst8                                                                                                         ;              ;
 ;       |adder:inst8|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|A:inst8|adder:inst8                                                                                             ;              ;
 ;       |com:inst1|                         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|A:inst8|com:inst1                                                                                               ;              ;
@@ -254,14 +254,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |com:inst2|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst6|com:inst2                                                                                   ;              ;
 ;          |com:inst|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst6|com:inst                                                                                    ;              ;
 ;       |c_b_3:inst7|                       ; 9 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst7                                                                                             ;              ;
-;          |com:inst1|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst7|com:inst1                                                                                   ;              ;
+;          |com:inst1|                      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst7|com:inst1                                                                                   ;              ;
 ;          |com:inst2|                      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst7|com:inst2                                                                                   ;              ;
-;          |com:inst|                       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst7|com:inst                                                                                    ;              ;
+;          |com:inst|                       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst7|com:inst                                                                                    ;              ;
 ;       |c_b_3:inst|                        ; 15 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst                                                                                              ;              ;
 ;          |com:inst1|                      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst|com:inst1                                                                                    ;              ;
 ;          |com:inst2|                      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst|com:inst2                                                                                    ;              ;
 ;          |com:inst|                       ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|B:inst1|c_b_3:inst|com:inst                                                                                     ;              ;
 ;    |ab_dis:inst9|                         ; 0 (0)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|ab_dis:inst9                                                                                                    ;              ;
+;    |anser_dis:inst16|                     ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|anser_dis:inst16                                                                                                ;              ;
 ;    |four_data_com:inst6|                  ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|four_data_com:inst6                                                                                             ;              ;
 ;       |com:inst2|                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|four_data_com:inst6|com:inst2                                                                                   ;              ;
 ;       |com:inst3|                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|four_data_com:inst6|com:inst3                                                                                   ;              ;
@@ -289,7 +290,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_divide:Mod0|                   ; 139 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod0                                                                                 ;              ;
 ;          |lpm_divide_h6m:auto_generated|  ; 139 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod0|lpm_divide_h6m:auto_generated                                                   ;              ;
 ;             |sign_div_unsign_olh:divider| ; 139 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod0|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider                       ;              ;
-;                |alt_u_div_i2f:divider|    ; 139 (139)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod0|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider ;              ;
+;                |alt_u_div_i2f:divider|    ; 139 (139)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod0|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider ; work         ;
 ;       |lpm_divide:Mod1|                   ; 101 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod1                                                                                 ;              ;
 ;          |lpm_divide_h6m:auto_generated|  ; 101 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod1|lpm_divide_h6m:auto_generated                                                   ;              ;
 ;             |sign_div_unsign_olh:divider| ; 101 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod1|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider                       ;              ;
@@ -302,12 +303,12 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;          |lpm_divide_h6m:auto_generated|  ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated                                                   ;              ;
 ;             |sign_div_unsign_olh:divider| ; 24 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider                       ;              ;
 ;                |alt_u_div_i2f:divider|    ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider ;              ;
-;    |random_gen:inst27|                    ; 73 (10)           ; 55 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|random_gen:inst27                                                                                               ;              ;
-;       |div20:inst26|                      ; 35 (35)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|random_gen:inst27|div20:inst26                                                                                  ;              ;
-;       |lfsr_14bit:inst|                   ; 28 (28)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|random_gen:inst27|lfsr_14bit:inst                                                                               ;              ;
-;    |run_blink2:inst2|                     ; 46 (0)            ; 36 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|run_blink2:inst2                                                                                                ;              ;
+;    |random_gen:inst27|                    ; 38 (10)           ; 29 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|random_gen:inst27                                                                                               ;              ;
+;       |div20:inst26|                      ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|random_gen:inst27|div20:inst26                                                                                  ;              ;
+;       |lfsr_14bit:inst|                   ; 27 (27)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|random_gen:inst27|lfsr_14bit:inst                                                                               ;              ;
+;    |run_blink2:inst2|                     ; 45 (0)            ; 35 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|run_blink2:inst2                                                                                                ;              ;
 ;       |div20:inst1|                       ; 35 (35)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|run_blink2:inst2|div20:inst1                                                                                    ;              ;
-;       |run_blink:inst|                    ; 11 (11)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|run_blink2:inst2|run_blink:inst                                                                                 ;              ;
+;       |run_blink:inst|                    ; 10 (10)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|run_blink2:inst2|run_blink:inst                                                                                 ;              ;
 ;    |seven_display_4by4:inst29|            ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|seven_display_4by4:inst29                                                                                       ;              ;
 ;       |seven_display:inst13|              ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|seven_display_4by4:inst29|seven_display:inst13                                                                  ;              ;
 ;       |seven_display:inst14|              ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FINAL|seven_display_4by4:inst29|seven_display:inst14                                                                  ;              ;
@@ -326,15 +327,41 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; ab_dis:inst9|BO[3]                    ; Stuck at GND due to stuck port data_in ;
-; ab_dis:inst9|AO[3]                    ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 2 ;                                        ;
-+---------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++----------------------------------------+------------------------------------------------+
+; Register name                          ; Reason for Removal                             ;
++----------------------------------------+------------------------------------------------+
+; ab_dis:inst9|BO[3]                     ; Stuck at GND due to stuck port data_in         ;
+; ab_dis:inst9|AO[3]                     ; Stuck at GND due to stuck port data_in         ;
+; random_gen:inst27|div20:inst26|r[0]    ; Merged with run_blink2:inst2|div20:inst1|r[0]  ;
+; random_gen:inst27|div20:inst26|r[1]    ; Merged with run_blink2:inst2|div20:inst1|r[1]  ;
+; random_gen:inst27|div20:inst26|r[2]    ; Merged with run_blink2:inst2|div20:inst1|r[2]  ;
+; random_gen:inst27|div20:inst26|r[3]    ; Merged with run_blink2:inst2|div20:inst1|r[3]  ;
+; random_gen:inst27|div20:inst26|r[4]    ; Merged with run_blink2:inst2|div20:inst1|r[4]  ;
+; random_gen:inst27|div20:inst26|r[5]    ; Merged with run_blink2:inst2|div20:inst1|r[5]  ;
+; random_gen:inst27|div20:inst26|r[6]    ; Merged with run_blink2:inst2|div20:inst1|r[6]  ;
+; random_gen:inst27|div20:inst26|r[7]    ; Merged with run_blink2:inst2|div20:inst1|r[7]  ;
+; random_gen:inst27|div20:inst26|r[8]    ; Merged with run_blink2:inst2|div20:inst1|r[8]  ;
+; random_gen:inst27|div20:inst26|r[9]    ; Merged with run_blink2:inst2|div20:inst1|r[9]  ;
+; random_gen:inst27|div20:inst26|r[10]   ; Merged with run_blink2:inst2|div20:inst1|r[10] ;
+; random_gen:inst27|div20:inst26|r[11]   ; Merged with run_blink2:inst2|div20:inst1|r[11] ;
+; random_gen:inst27|div20:inst26|r[12]   ; Merged with run_blink2:inst2|div20:inst1|r[12] ;
+; random_gen:inst27|div20:inst26|r[13]   ; Merged with run_blink2:inst2|div20:inst1|r[13] ;
+; random_gen:inst27|div20:inst26|r[14]   ; Merged with run_blink2:inst2|div20:inst1|r[14] ;
+; random_gen:inst27|div20:inst26|r[15]   ; Merged with run_blink2:inst2|div20:inst1|r[15] ;
+; random_gen:inst27|div20:inst26|r[16]   ; Merged with run_blink2:inst2|div20:inst1|r[16] ;
+; random_gen:inst27|div20:inst26|r[17]   ; Merged with run_blink2:inst2|div20:inst1|r[17] ;
+; random_gen:inst27|div20:inst26|r[18]   ; Merged with run_blink2:inst2|div20:inst1|r[18] ;
+; random_gen:inst27|div20:inst26|r[19]   ; Merged with run_blink2:inst2|div20:inst1|r[19] ;
+; random_gen:inst27|div20:inst26|r[20]   ; Merged with run_blink2:inst2|div20:inst1|r[20] ;
+; random_gen:inst27|div20:inst26|r[21]   ; Merged with run_blink2:inst2|div20:inst1|r[21] ;
+; random_gen:inst27|div20:inst26|r[22]   ; Merged with run_blink2:inst2|div20:inst1|r[22] ;
+; random_gen:inst27|div20:inst26|r[23]   ; Merged with run_blink2:inst2|div20:inst1|r[23] ;
+; random_gen:inst27|div20:inst26|r[24]   ; Merged with run_blink2:inst2|div20:inst1|r[24] ;
+; random_gen:inst27|div20:inst26|r[25]   ; Merged with run_blink2:inst2|div20:inst1|r[25] ;
+; Total Number of Removed Registers = 28 ;                                                ;
++----------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -342,12 +369,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 140   ;
-; Number of registers using Synchronous Clear  ; 78    ;
+; Total registers                              ; 113   ;
+; Number of registers using Synchronous Clear  ; 52    ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -363,29 +390,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |FINAL|random_gen:inst27|lfsr_14bit:inst|ran[10] ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |FINAL|random_gen:inst27|lfsr_14bit:inst|ran[11] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-
-
 +----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod0 ;
+; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div2 ;
 +------------------------+----------------+----------------------------------------+
 ; Parameter Name         ; Value          ; Type                                   ;
 +------------------------+----------------+----------------------------------------+
 ; LPM_WIDTHN             ; 14             ; Untyped                                ;
-; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_WIDTHD             ; 10             ; Untyped                                ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
-; CBXI_PARAMETER         ; lpm_divide_h6m ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_rfm ; Untyped                                ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
@@ -397,30 +414,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div0 ;
-+------------------------+----------------+----------------------------------------+
-; Parameter Name         ; Value          ; Type                                   ;
-+------------------------+----------------+----------------------------------------+
-; LPM_WIDTHN             ; 14             ; Untyped                                ;
-; LPM_WIDTHD             ; 4              ; Untyped                                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
-; LPM_PIPELINE           ; 0              ; Untyped                                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
-; CBXI_PARAMETER         ; lpm_divide_eem ; Untyped                                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
-+------------------------+----------------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod1 ;
+; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod3 ;
 +------------------------+----------------+----------------------------------------+
 ; Parameter Name         ; Value          ; Type                                   ;
 +------------------------+----------------+----------------------------------------+
@@ -489,18 +483,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div2 ;
+; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Div0 ;
 +------------------------+----------------+----------------------------------------+
 ; Parameter Name         ; Value          ; Type                                   ;
 +------------------------+----------------+----------------------------------------+
 ; LPM_WIDTHN             ; 14             ; Untyped                                ;
-; LPM_WIDTHD             ; 10             ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
 ; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
 ; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                ;
 ; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
-; CBXI_PARAMETER         ; lpm_divide_rfm ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_eem ; Untyped                                ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
@@ -512,7 +506,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod3 ;
+; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod1 ;
++------------------------+----------------+----------------------------------------+
+; Parameter Name         ; Value          ; Type                                   ;
++------------------------+----------------+----------------------------------------+
+; LPM_WIDTHN             ; 14             ; Untyped                                ;
+; LPM_WIDTHD             ; 4              ; Untyped                                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                ;
+; LPM_PIPELINE           ; 0              ; Untyped                                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                ;
+; CBXI_PARAMETER         ; lpm_divide_h6m ; Untyped                                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                         ;
++------------------------+----------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: oct_decode:inst|lpm_divide:Mod0 ;
 +------------------------+----------------+----------------------------------------+
 ; Parameter Name         ; Value          ; Type                                   ;
 +------------------------+----------------+----------------------------------------+
@@ -540,7 +557,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Sat Dec 30 16:28:30 2023
+    Info: Processing started: Sat Jan 06 19:00:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off guess_number -c guess_number
 Info: Found 1 design units, including 1 entities, in source file seven_display.v
     Info: Found entity 1: seven_display
@@ -602,6 +619,8 @@ Info: Found 1 design units, including 1 entities, in source file run_blink.v
     Info: Found entity 1: run_blink
 Info: Found 1 design units, including 1 entities, in source file run_blink2.bdf
     Info: Found entity 1: run_blink2
+Info: Found 1 design units, including 1 entities, in source file anser_dis.v
+    Info: Found entity 1: anser_dis
 Info: Elaborating entity "FINAL" for the top level hierarchy
 Warning: No superset bus at connection
 Info: Elaborating entity "seven_display_blink" for hierarchy "seven_display_blink:inst7"
@@ -633,51 +652,16 @@ Info: Elaborating entity "seven_display" for hierarchy "seven_display_4by4:inst2
 Info: Elaborating entity "ab" for hierarchy "ab:inst5"
 Info: Elaborating entity "run_blink2" for hierarchy "run_blink2:inst2"
 Info: Elaborating entity "run_blink" for hierarchy "run_blink2:inst2|run_blink:inst"
-Warning (10230): Verilog HDL assignment warning at run_blink.v(13): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at run_blink.v(13): truncated value with size 32 to match size of target (8)
+Info: Elaborating entity "anser_dis" for hierarchy "anser_dis:inst16"
 Info: Inferred 7 megafunctions from design logic
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod0"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Div0"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod1"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Div1"
-    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod2"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Div2"
     Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod3"
-Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Mod0"
-Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Mod0" with the following parameter:
-    Info: Parameter "LPM_WIDTHN" = "14"
-    Info: Parameter "LPM_WIDTHD" = "4"
-    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_h6m.tdf
-    Info: Found entity 1: lpm_divide_h6m
-Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
-    Info: Found entity 1: sign_div_unsign_olh
-Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
-    Info: Found entity 1: alt_u_div_i2f
-Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
-    Info: Found entity 1: add_sub_lkc
-Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
-    Info: Found entity 1: add_sub_mkc
-Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Div0"
-Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Div0" with the following parameter:
-    Info: Parameter "LPM_WIDTHN" = "14"
-    Info: Parameter "LPM_WIDTHD" = "4"
-    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_eem.tdf
-    Info: Found entity 1: lpm_divide_eem
-Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Div1"
-Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Div1" with the following parameter:
-    Info: Parameter "LPM_WIDTHN" = "14"
-    Info: Parameter "LPM_WIDTHD" = "7"
-    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_hem.tdf
-    Info: Found entity 1: lpm_divide_hem
-Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
-    Info: Found entity 1: sign_div_unsign_rlh
-Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
-    Info: Found entity 1: alt_u_div_o2f
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Div1"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod2"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Div0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod1"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "oct_decode:inst|Mod0"
 Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Div2"
 Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Div2" with the following parameter:
     Info: Parameter "LPM_WIDTHN" = "14"
@@ -690,6 +674,42 @@ Info: Found 1 design units, including 1 entities, in source file db/sign_div_uns
     Info: Found entity 1: sign_div_unsign_5nh
 Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_c5f.tdf
     Info: Found entity 1: alt_u_div_c5f
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info: Found entity 1: add_sub_lkc
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info: Found entity 1: add_sub_mkc
+Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Mod3"
+Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Mod3" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "14"
+    Info: Parameter "LPM_WIDTHD" = "4"
+    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_h6m.tdf
+    Info: Found entity 1: lpm_divide_h6m
+Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_olh.tdf
+    Info: Found entity 1: sign_div_unsign_olh
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
+    Info: Found entity 1: alt_u_div_i2f
+Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Div1"
+Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Div1" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "14"
+    Info: Parameter "LPM_WIDTHD" = "7"
+    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_hem.tdf
+    Info: Found entity 1: lpm_divide_hem
+Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
+    Info: Found entity 1: sign_div_unsign_rlh
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_o2f.tdf
+    Info: Found entity 1: alt_u_div_o2f
+Info: Elaborated megafunction instantiation "oct_decode:inst|lpm_divide:Div0"
+Info: Instantiated megafunction "oct_decode:inst|lpm_divide:Div0" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "14"
+    Info: Parameter "LPM_WIDTHD" = "4"
+    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_eem.tdf
+    Info: Found entity 1: lpm_divide_eem
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX4[6]" is stuck at GND
     Warning (13410): Pin "HEX4[5]" is stuck at GND
@@ -706,15 +726,15 @@ Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX6[1]" is stuck at GND
     Warning (13410): Pin "HEX6[0]" is stuck at GND
 Info: Found the following redundant logic cells in design
+    Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_12_result_int[0]~10"
+    Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_13_result_int[0]~10"
     Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod2|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_9_result_int[0]~10"
     Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod2|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_10_result_int[0]~10"
     Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod2|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_11_result_int[0]~10"
     Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod2|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_12_result_int[0]~10"
     Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod2|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_13_result_int[0]~10"
-    Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod1|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_13_result_int[0]~10"
     Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod1|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_12_result_int[0]~10"
-    Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_12_result_int[0]~10"
-    Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod3|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_13_result_int[0]~10"
+    Info (17048): Logic cell "oct_decode:inst|lpm_divide:Mod1|lpm_divide_h6m:auto_generated|sign_div_unsign_olh:divider|alt_u_div_i2f:divider|add_sub_13_result_int[0]~10"
 Warning: Ignored assignments for entity "DE2_Default" -- entity does not exist in design
     Warning: Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE2_Default -section_id Top was ignored
     Warning: Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE2_Default -section_id Top was ignored
@@ -727,14 +747,27 @@ Warning: Ignored assignments for entity "DE2_Default" -- entity does not exist i
     Warning: Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE2_Default -section_id Top was ignored
     Warning: Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE2_Default -section_id Top was ignored
 Info: Generated suppressed messages file D:/de2/final_exam_project/guess_number.map.smsg
-Info: Implemented 1173 device resources after synthesis - the final resource count might be different
-    Info: Implemented 12 input pins
-    Info: Implemented 78 output pins
-    Info: Implemented 1083 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 35 warnings
-    Info: Peak virtual memory: 237 megabytes
-    Info: Processing ended: Sat Dec 30 16:28:33 2023
-    Info: Elapsed time: 00:00:03
+Warning: Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[5]"
+    Warning (15610): No output dependent on input pin "SW[6]"
+    Warning (15610): No output dependent on input pin "SW[7]"
+    Warning (15610): No output dependent on input pin "SW[8]"
+    Warning (15610): No output dependent on input pin "SW[9]"
+    Warning (15610): No output dependent on input pin "SW[10]"
+    Warning (15610): No output dependent on input pin "SW[11]"
+    Warning (15610): No output dependent on input pin "SW[12]"
+    Warning (15610): No output dependent on input pin "SW[13]"
+    Warning (15610): No output dependent on input pin "SW[14]"
+    Warning (15610): No output dependent on input pin "SW[15]"
+    Warning (15610): No output dependent on input pin "SW[16]"
+Info: Implemented 1167 device resources after synthesis - the final resource count might be different
+    Info: Implemented 23 input pins
+    Info: Implemented 80 output pins
+    Info: Implemented 1064 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 48 warnings
+    Info: Peak virtual memory: 238 megabytes
+    Info: Processing ended: Sat Jan 06 19:00:24 2024
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:02
 
 

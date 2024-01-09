@@ -14,7 +14,8 @@ reg feedback;
 
 // always block to calculate the feedback bit
 always @* begin
-    feedback = state[13] ^ state[12] ^ state[11] ^ state[1];
+    // Use different taps for a better pseudorandom sequence
+    feedback = state[13] ^ state[11] ^ state[10] ^ state[1];
 end
 
 // always block to update the state and the random number at the positive edge of the clock

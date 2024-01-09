@@ -7,7 +7,8 @@ module seven_bit_or(
 genvar i;
 
 generate
-    for (i = 0; i < 7; i = i + 1) begin : NAND_generate
+    for (i = 0; i < 7; i = i + 1) 
+    begin :sevenor
         assign out_data[i] = |{data[i], en};
     end
 endgenerate
